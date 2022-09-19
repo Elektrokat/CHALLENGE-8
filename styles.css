@@ -162,24 +162,3 @@ a:hover{text-decoration: underline;}
         gap: 1em;
     }
 }
-
-                    /*desktop view  */
-
-@media screen and (min-width: 555px) and (max-width: 1440px) {
-    
-    body{
-        background-color: var(--light-grayish-blue);
-        width: 100%;
-        min-height: 100%;
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        gap: 1.5rem 1.5rem;
-        grid-template-columns: repeat(4, 15em);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
-        'main main section1 aside'
-        'section2 section3 section3 aside'
-        'footer footer footer footer';
-    }
-}
