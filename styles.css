@@ -17,7 +17,7 @@
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
-body{
+main{
     background-color: var(--light-grayish-blue);
     width: 100%;
     min-height: 100vh;
@@ -28,13 +28,13 @@ body{
     grid-template-columns: repeat(4, 15em);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 
-    'main main section1 aside'
+    'section4 section4 section1 aside'
     'section2 section3 section3 aside'
     'footer footer footer footer';
 }
 
 .main{
-    grid-area: main;
+    grid-area: section4;
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-size: 6.5em;
@@ -103,7 +103,7 @@ h3{
     padding: 12px 0;
 }
 
-h4{
+h1{
     color: var(--light-gray);
     font-weight: 600;
     font-size: 0.77em;
@@ -171,9 +171,3 @@ a:hover{text-decoration: underline;}
     }
 }
 
-                    /* desktop view */
-
-@media screen and (min-width: 769px) and (max-width: 1440px){
-    
-    
-}
