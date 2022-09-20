@@ -33,7 +33,7 @@ body{
     'footer footer footer footer';
 }
 
-main{
+.main{
     grid-area: main;
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
@@ -175,15 +175,5 @@ a:hover{text-decoration: underline;}
 
 @media screen and (min-width: 769px) and (max-width: 1440px){
     
-    body{
-        align-content: center;
-        justify-content: center;
-        gap: 1.5rem 1.5rem;
-        grid-template-columns: repeat(4, 15em);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
-        'main main section1 aside'
-        'section2 section3 section3 aside'
-        'footer footer footer footer';
-    }
+    
 }
