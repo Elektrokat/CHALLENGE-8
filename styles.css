@@ -35,6 +35,10 @@ body{
 
 main{
     grid-area: main;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 6.5em;
+    background-position-x: 270px;
     background-color: var(--violet);
     border-radius: 8px;
     padding: 20px;
@@ -109,7 +113,7 @@ h4{
     color: var(--dark-grayish-blue);
 }
 
-p{
+blockquote{
     color: var(--light-gray);
     opacity: 70%;
     font-weight: 500;
@@ -153,14 +157,33 @@ a:hover{text-decoration: underline;}
 
                     /* mobile view */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
 
     body{
-        max-height: 100vh;
+        min-height: 100vh;
         grid-template-columns: 19em;
+        align-content: center;
+        justify-content: center;
         grid-template-rows: repeat(5, auto);
         grid-template-areas: 
         'main' 'section1' 'section2' 'section3' 'aside' 'footer';
         gap: 1em;
+    }
+}
+
+                    /* desktop view */
+
+@media screen and (min-width: 769px) and (max-width: 1440px){
+    
+    body{
+        align-content: center;
+        justify-content: center;
+        gap: 1.5rem 1.5rem;
+        grid-template-columns: repeat(4, 15em);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        'main main section1 aside'
+        'section2 section3 section3 aside'
+        'footer footer footer footer';
     }
 }
